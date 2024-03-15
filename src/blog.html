@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>BLOG</title>
+     <!-- ICON TAB -->
+     <!-- <link rel="shortcut icon" href="../img/logo-header.png"> -->
+     <!-- CSS -->
+     <link rel="stylesheet" href="../public/output.css">
+     <!-- GOOGLE FONT -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+     <!-- ICONS REMIX -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.min.css" rel="stylesheet">
+     <!-- SWIPER -->
+     <link rel="stylesheet" href="../public/swiper-bundle.min.css">
+</head>
+<body>
+     <!-- HEADER -->
+     <header class="py-8 lg:pt-6 lg:pb-14">
+          <div class="container mx-auto lg:relative flex flex-col  lg:flex-row
+          justify-between gap-y-4 lg:gap-y-0">
+               <!-- logo -->
+               <div class="flex justify-center lg:justify-normal">
+                    <a href="">
+                         <img src="../img/logo-header.png" alt="" class="w-[300px]">
+                    </a>
+               </div>
+
+               <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0">
+                    <!-- location -->
+                    <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+                         <button class="text-secondary btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0
+                         shadow-2xl transition-all duration-300 z-9">
+                              <a href="daftar.html">Login</a>
+                         </button>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+                         <a href="">
+                              <i
+                                   class="ri-shopping-bag-2-line text-2xl text-gray-700 shadow-2xl hover:text-accent transition-all"></i>
+                         </a>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+                         <a href="">
+                              <i
+                                   class="ri-user-line text-2xl text-gray-700 shadow-2xl hover:text-accent transition-all"></i>
+                         </a>
+                    </div>
+
+                    <div>
+                         <!-- nav mobile -->
+                         <nav class="mnav bg-white fixed w-[300px] top-0 h-screen -left-[300px] lg:hidden">
+                              <div class="mnav__close-btn bg-primary w-8 h-8 relative -right-full
+                              top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg">
+                                   <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
+                              </div>
+                              <!-- logo, list, form -->
+                              <div class="px-12 flex flex-col gap-y-12 h-full">
+                                   <!-- logo -->
+                                   <a href="">
+                                        <img src="../img/logo-header.png" alt="">
+                                   </a>
+                                   <!-- list -->
+                                   <ul class="flex flex-col gap-y-5">
+                                        <li>
+                                             <a href="index.html"
+                                                  class="text-secondary hover:text-accent transition-all duration-300">Home</a>
+                                        </li>
+
+                                        <li>
+                                             <a href=""
+                                                  class="text-secondary hover:text-accent transition-all duration-300">Philosophy</a>
+                                        </li>
+
+                                        <li>
+                                             <a href=""
+                                                  class="text-secondary hover:text-accent transition-all duration-300">recommended</a>
+                                        </li>
+
+                                        <li>
+                                             <a href=""
+                                                  class="text-secondary hover:text-accent transition-all duration-300">Collection</a>
+                                        </li>
+
+                                        <li>
+                                             <a href=""
+                                                  class="text-secondary hover:text-accent transition-all duration-300">Blog</a>
+                                        </li>
+                                   </ul>
+                                   <!-- form -->
+                                   <form>
+                                        <label for="">
+                                             <i class="ri-search-2-line text-2xl text-accent"></i>
+                                        </label>
+                                        <input type="text" id="nav-search-input" placeholder="Search..." class="outline-none w-[160px] border-b-2 focus:border-b-2
+                                        focus:border-accent placeholder:italic">
+                                   </form>
+                              </div>
+                         </nav>
+
+                         <!-- nav dekstop -->
+                         <nav class="bg-white border-r pr-4 absolute w-full left-0 -bottom-[86px] shadow-custom1
+                         h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between lg:px-[50px]">
+                              <!-- list -->
+                              <ul class="flex gap-x-4">
+                                   <li>
+                                        <a href="index.html"
+                                             class="text-secondary hover:text-accent transition-all duration-300 border-r pr-4">Home</a>
+                                   </li>
+
+                                   <li>
+                                        <a href=""
+                                             class="text-secondary hover:text-accent transition-all duration-300 border-r pr-4">Philosophy</a>
+                                   </li>
+
+                                   <li>
+                                        <a href=""
+                                             class="text-secondary hover:text-accent transition-all duration-300 border-r pr-4">recommended</a>
+                                   </li>
+
+                                   <li>
+                                        <a href=""
+                                             class="text-secondary hover:text-accent transition-all duration-300 border-r pr-4">Collection</a>
+                                   </li>
+
+                                   <li>
+                                        <a href=""
+                                             class="text-secondary hover:text-accent transition-all duration-300 border-r pr-4">Blog</a>
+                                   </li>
+                              </ul>
+
+                              <!-- form -->
+                              <form class="relative flex gap-y-[10px]">
+                                   <label for="search-input" class="flex justify-center items-center group">
+                                        <i class="ri-search-2-line text-2xl text-accent"></i>
+                                   </label>
+                                   <input type="text" id="search-input" placeholder="Search..." class="outline-none w-[100px] focus:w-[180px] focus:border-b-2 focus:border-accent
+                                   placeholder:italic placeholder:text-base transition-all duration-500">
+
+                              </form>
+                         </nav>
+                    </div>
+               </div>
+          </div>
+     </header>
+
+     <!-- BLOG -->
+     <div class="container mx-auto xl:mt-24">
+          <h2 class="blog__title mb-[50px] text-center text-black text-[40px] xl:text-[64px] font-semibold capitalize tracking-[.44px]">Our 
+               <span class="text-primary">Recent Posts</span>
+          </h2>
+
+          <!-- blog post  -->
+          <div class="flex flex-col xl:flex-row gap-y-6 xl:gap-y-0 items-center xl:justify-between mb-[50px]">
+               <!-- post 1 -->
+               <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer">
+                    <div class="relative overflow-hidden group">
+
+                         <img src="../img/blog 1.png" class="group-hover:scale-110 transition-all duration-500">
+                         <!-- blog -->
+                         <div
+                              class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[16px]">
+                              new
+                         </div>
+                    </div>
+                    <!-- text -->
+                    <div class="px-5 py-6">
+                         <!-- date -->
+                         <div class="mb-4">FEBRUARY 13, 2023</div>
+                         <!-- title  -->
+                         <h4 class="h4 mb-[10px]">[REVIEW] SKIN1004 HYALU-CICA WATER-FIT SUN SERUM SPF 50+ PA++++</h4>
+                         <!-- deks  -->
+                         <p class="font-light"> 2022 is the year of discovering the best sunscreens. The year is about
+                              to end and it is about time I started rounding up the best makeup and skinc...
+                              <a class="italic underline text-[#4C5354]" href="">Read more</a>
+                         </p>
+                    </div>
+               </div>
+               <!-- post 2 -->
+               <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer">
+                    <div class="relative overflow-hidden group">
+                         <img src="../img/blog2.png" class="group-hover:scale-110 transition-all duration-500">
+                         <!-- blog -->
+                         <div
+                              class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[16px]">
+                              new
+                         </div>
+                    </div>
+                    <!-- text -->
+                    <div class="px-5 py-6">
+                         <!-- date -->
+                         <div class="mb-4">FEBRUARY 13, 2023</div>
+                         <!-- title  -->
+                         <h4 class="h4 mb-[10px]">SKIN1004 SUNSCREEN REVIEW COMPARISON CENTELLA VS HYALU</h4>
+                         <!-- deks  -->
+                         <p class="font-light">Comparison: Skin1004 Centella Sunscreen and Skin1004 Hyalu Cica Sunscreen
+                              It is no secret that Asian sunscreen is the bomb. I’m sorry, western s...
+
+                              <a class="italic underline text-[#4C5354] mx-auto" href="">Read more</a>
+                         </p>
+                    </div>
+               </div>
+               <!-- post 3 -->
+               <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer">
+                    <div class="relative overflow-hidden group">
+                         <img src="../img/blog3.png" class="group-hover:scale-110 transition-all duration-500">
+                         <!-- blog -->
+                         <div
+                              class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[16px]">
+                              new
+                         </div>
+                    </div>
+                    <!-- text -->
+                    <div class="px-5 py-6">
+                         <!-- date -->
+                         <div class="mb-4">FEBRUARY 13, 2023</div>
+                         <!-- title  -->
+                         <h4 class="h4 mb-[10px]">SKIN1004 MADAGASCAR CENTELLA HYALU-CICA BRIGHTENING TONER & SLEEPING
+                              PACK | REVIEW</h4>
+                         <!-- deks  -->
+                         <p class="font-light">Hyaluronic acid and centella asiatica are two of my favorite skincare
+                              ingredients. Seeing them together in any ...
+
+                              <a class="italic underline text-[#4C5354]" href="">Read more</a>
+                         </p>
+                    </div>
+               </div>
+          </div>
+
+          <div class="flex flex-col xl:flex-row gap-y-6 xl:gap-y-0 items-center xl:justify-between mb-[50px]">
+               <!-- post 1 -->
+               <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer">
+                    <div class="relative overflow-hidden group">
+
+                         <img src="../img/blog4.png" class="group-hover:scale-110 transition-all duration-500">
+                         <!-- blog -->
+                         <!-- <div
+                              class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[16px]">
+                              new
+                         </div> -->
+                    </div>
+                    <!-- text -->
+                    <div class="px-5 py-6">
+                         <!-- date -->
+                         <div class="mb-4">FEBRUARY 10, 2023</div>
+                         <!-- title  -->
+                         <h4 class="h4 mb-[10px]">SKIN1004 MADAGASCAR CENTELLA AMPOULE FOAM REVIEW</h4>
+                         <!-- deks  -->
+                         <p class="font-light"> 2022 is the year of discovering the best sunscreens. The year is about
+                              to end and it is about time I started rounding up the best makeup and skinc...
+                              <a class="italic underline text-[#4C5354]" href="">Read more</a>
+                         </p>
+                    </div>
+               </div>
+               <!-- post 2 -->
+               <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer">
+                    <div class="relative overflow-hidden group">
+                         <img src="../img/blog5.png" class="group-hover:scale-110 transition-all duration-500">
+                         <!-- blog -->
+                         <!-- <div
+                              class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[16px]">
+                              new
+                         </div> -->
+                    </div>
+                    <!-- text -->
+                    <div class="px-5 py-6">
+                         <!-- date -->
+                         <div class="mb-4">FEBRUARY 10, 2023</div>
+                         <!-- title  -->
+                         <h4 class="h4 mb-[10px]">SKIN1004 MADAGASCAR CENTELLA ASIATICA AMPOULE REVIEW</h4>
+                         <!-- deks  -->
+                         <p class="font-light">Comparison: Skin1004 Centella Sunscreen and Skin1004 Hyalu Cica Sunscreen
+                              It is no secret that Asian sunscreen is the bomb. I’m sorry, western s...
+
+                              <a class="italic underline text-[#4C5354] mx-auto" href="">Read more</a>
+                         </p>
+                    </div>
+               </div>
+               <!-- post 3 -->
+               <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer">
+                    <div class="relative overflow-hidden group">
+                         <img src="../img/blog6.png" class="group-hover:scale-110 transition-all duration-500">
+                         <!-- blog -->
+                         <!-- <div
+                              class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[16px]">
+                              new
+                         </div> -->
+                    </div>
+                    <!-- text -->
+                    <div class="px-5 py-6">
+                         <!-- date -->
+                         <div class="mb-4">FEBRUARY 10, 2023</div>
+                         <!-- title  -->
+                         <h4 class="h4 mb-[10px]">SKIN1004 MADAGASCAR CENTELLA HYALU-CICA BLUE SERUM REVIEW</h4>
+                         <!-- deks  -->
+                         <p class="font-light">SKIN1004 Madagascar Centella Hyalu-Cica Blue Serum is a multi-purpose product that promises to hydrate, soothe, and brighten the skin...
+
+                              <a class="italic underline text-[#4C5354]" href="">Read more</a>
+                         </p>
+                    </div>
+               </div>
+          </div>
+
+          <div class="flex flex-col xl:flex-row gap-y-6 xl:gap-y-0 items-center xl:justify-between mb-[50px]">
+               <!-- post 1 -->
+               <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer">
+                    <div class="relative overflow-hidden group">
+
+                         <img src="../img/blog8.png" class="group-hover:scale-110 transition-all duration-500">
+                         <!-- blog -->
+                         <!-- <div
+                              class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[16px]">
+                              new
+                         </div> -->
+                    </div>
+                    <!-- text -->
+                    <div class="px-5 py-6">
+                         <!-- date -->
+                         <div class="mb-4">NOVEMBER 14, 2022</div>
+                         <!-- title  -->
+                         <h4 class="h4 mb-[10px]">WHICH SKIN1004 TONER IS RIGHT FOR YOU?</h4>
+                         <!-- deks  -->
+                         <p class="font-light"> Toners are essential in a full-step skincare routine. Their purpose is to clear out excess sebum and restore the skin's pH levels, but all toners c...
+                              <a class="italic underline text-[#4C5354]" href="">Read more</a>
+                         </p>
+                    </div>
+               </div>
+               <!-- post 2 -->
+               <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer">
+                    <div class="relative overflow-hidden group">
+                         <img src="../img/blog7.png" class="group-hover:scale-110 transition-all duration-500">
+                         <!-- blog -->
+                         <!-- <div
+                              class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[16px]">
+                              new
+                         </div> -->
+                    </div>
+                    <!-- text -->
+                    <div class="px-5 py-6">
+                         <!-- date -->
+                         <div class="mb-4">MAY 27, 2022</div>
+                         <!-- title  -->
+                         <h4 class="h4 mb-[10px]">WHICH SKIN1004 SUNCREAM IS BEST FOR YOU?</h4>
+                         <!-- deks  -->
+                         <p class="font-light">Great news! SKIN1004 is expanding our suncream line up, just in time for summer vacation! Our beloved Madagascar Centella Air-Fit Suncream Plus is ...
+
+                              <a class="italic underline text-[#4C5354] mx-auto" href="">Read more</a>
+                         </p>
+                    </div>
+               </div>
+               <!-- post 3 -->
+               <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer">
+                    <div class="relative overflow-hidden group">
+                         <img src="../img/blog9.png" class="group-hover:scale-110 transition-all duration-500">
+                         <!-- blog -->
+                         <!-- <div
+                              class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[16px]">
+                              new
+                         </div> -->
+                    </div>
+                    <!-- text -->
+                    <div class="px-5 py-6">
+                         <!-- date -->
+                         <div class="mb-4">JULY 14, 2022</div>
+                         <!-- title  -->
+                         <h4 class="h4 mb-[10px]">BACK TO BASICS: WHAT ARE FACIAL MISTS FOR?
+                              </h4>
+                         <!-- deks  -->
+                         <p class="font-light">In the hotter weather, the need to douse yourself in cool water is strong. Thankfully facial mists are the perfect way to cool down while also prov...
+
+                              <a class="italic underline text-[#4C5354]" href="">Read more</a>
+                         </p>
+                    </div>
+               </div>
+          </div>
+
+          <div class="flex flex-col xl:flex-row gap-y-6 xl:gap-y-0 items-center xl:justify-between mb-[50px]">
+               <!-- post 1 -->
+               <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer">
+                    <div class="relative overflow-hidden group">
+
+                         <img src="../img/blog10.png" class="group-hover:scale-110 transition-all duration-500">
+                         <!-- blog -->
+                         <!-- <div
+                              class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[16px]">
+                              new
+                         </div> -->
+                    </div>
+                    <!-- text -->
+                    <div class="px-5 py-6">
+                         <!-- date -->
+                         <div class="mb-4">FEBRUARY 08, 2022</div>
+                         <!-- title  -->
+                         <h4 class="h4 mb-[10px]">WHY CENTELLA FROM MADAGASCAR WORKS WONDERS ON YOUR SKIN</h4>
+                         <!-- deks  -->
+                         <p class="font-light"> 2022 is the year of discovering the best sunscreens. The year is about
+                              to end and it is about time I starte...
+                              <a class="italic underline text-[#4C5354]" href="">Read more</a>
+                         </p>
+                    </div>
+               </div>
+               <!-- post 2 -->
+               <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer">
+                    <div class="relative overflow-hidden group">
+                         <img src="../img/blog11.png" class="group-hover:scale-110 transition-all duration-500">
+                         <!-- blog -->
+                         <!-- <div
+                              class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[16px]">
+                              new
+                         </div> -->
+                    </div>
+                    <!-- text -->
+                    <div class="px-5 py-6">
+                         <!-- date -->
+                         <div class="mb-4">FEBRUARY 08, 2022</div>
+                         <!-- title  -->
+                         <h4 class="h4 mb-[10px]">ALL COUPLED UP - THE ULTIMATE SKINCARE DUOS</h4>
+                         <!-- deks  -->
+                         <p class="font-light">Comparison: Skin1004 Centella Sunscreen and Skin1004 Hyalu Cica Sunscreen
+                              It is no secret that Asian sunscreen is the bomb. I’m sorry, western s...
+
+                              <a class="italic underline text-[#4C5354] mx-auto" href="">Read more</a>
+                         </p>
+                    </div>
+               </div>
+               <!-- post 3 -->
+               <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer">
+                    <div class="relative overflow-hidden group">
+                         <img src="../img/blog12.png" class="group-hover:scale-110 transition-all duration-500">
+                         <!-- blog -->
+                         <!-- <div
+                              class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[16px]">
+                              new
+                         </div> -->
+                    </div>
+                    <!-- text -->
+                    <div class="px-5 py-6">
+                         <!-- date -->
+                         <div class="mb-4">FEBRUARY 08, 2022</div>
+                         <!-- title  -->
+                         <h4 class="h4 mb-[10px]">BACK TO BASICS: WHICH SKIN1004 PRODUCT IS YOUR SKIN TYPE MATCH?</h4>
+                         <!-- deks  -->
+                         <p class="font-light">Hyaluronic acid and centella asiatica are two of my favorite skincare
+                              ingredients. Seeing them together in any ...
+
+                              <a class="italic underline text-[#4C5354]" href="">Read more</a>
+                         </p>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <!-- FOOTER -->
+     <footer class="text-secondary p-8 mt-5 bg-[#fcf9f3]">
+          <div class="container mx-auto flex flex-col xl:flex-row items-start justify-between">
+               <div class="items-center w-[300px]">
+                    <img src="../img/logo-header.png" alt="" class=" ">
+                    <p class="font-light text-gray-500 mt-[20px]">Whatever touches the skin must be pure. Let us deliver
+                         you the untouched nature and its purity to your skin, to help you discover your best skin.</p>
+                    <div class="text-gray-500 mt-[10px]">Customer Service : hello@skin1004korea.com</div>
+                    <div class="text-gray-500 mt-[10px]">Wholesale Inquiry : sales@skin1004korea.com</div>
+               </div>
+
+               <div class="items-center mt-5">
+                    <h3>HELP</h3>
+                    <div>
+                         <a href="">SKIN1004 Blog</a>
+                    </div>
+                    <div>
+                         <a href="">Stores</a>
+                    </div>
+                    <div>
+                         <a href="">Become A Partner</a>
+                    </div>
+                    <div>
+                         <a href="">FAQs</a>
+                    </div>
+                    <div>
+                         <a href="">Contact Us</a>
+                    </div>
+               </div>
+
+               <div class="items-center mt-5">
+                    <h3>POLICY</h3>
+                    <div>Shipping Policy</div>
+                    <div>Refund Policy</div>
+                    <div>Privacy Policy</div>
+                    <div>Terms of Service</div>
+               </div>
+
+               <div class="items-center xl:mt-[10px] w-[300px] mt-5">
+                    <h3>BE THE FIRST TO KNOW</h3>
+                    <div class="items-center">Stay up to date with our newest releases, exclusive offers, and giveaways
+                         straight to your inbox.</div>
+                    <form class="flex-1">
+                         <div class="flex flex-col relative mt-3">
+                              <input
+                                   class=" w-full h-[55px] bg-transparent border-2 border-accent outline-none pl-[30px] placeholder:text-secondary focus:text-black"
+                                   type="text" name="" id="" placeholder="Your Email Address">
+                         </div>
+
+                         <div class="flex flex-col relative mt-3">
+                              <button class="btn-sm md:absolute left-0 mt-3 bg-accent text-white">Subscribe</button>
+                         </div>
+
+                    </form>
+               </div>
+          </div>
+
+          <div class="container mx-auto text-xs mt-9 sm:mt-28">
+               <div class="mb-2">
+                    Craver Corporation
+               </div>
+
+               <div>
+                    <span class="font-bold">CEO:</span> Sohyung Lee
+               </div>
+
+               <div>
+                    <span class="font-bold">Email:</span> hello@skin1004korea.com
+               </div>
+
+               <div>
+                    <span class="font-bold">Company Location:</span> Milim tower 12F, 14, Teheran-ro 4-gil, Gangnam-gu, Seoul, Republic of Korea
+               </div>
+
+               <div>
+                    <span class="font-bold">Company registration number:</span> 261-81-14845
+               </div>
+
+               <div class="font-bold mt-2">
+                    © SKIN1004
+               </div>
+          </div>
+     </footer>
+</body>
+</html>

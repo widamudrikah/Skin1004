@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>SKIN1004</title>
+     <!-- ICON TAB -->
+     <!-- <link rel="shortcut icon" href="../img/logo-header.png"> -->
+     <!-- CSS -->
+     <link rel="stylesheet" href="../public/output.css">
+     <!-- GOOGLE FONT -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+     <!-- ICONS REMIX -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.min.css" rel="stylesheet">
+     <!-- SWIPER -->
+     <link rel="stylesheet" href="../public/swiper-bundle.min.css">
+</head>
+
+<body>
+     <!-- HEADER -->
+     <header class="py-8 lg:pt-6 lg:pb-14">
+          <div class="container mx-auto lg:relative flex flex-col  lg:flex-row
+          justify-between gap-y-4 lg:gap-y-0">
+               <!-- logo -->
+               <div class="flex justify-center lg:justify-normal">
+                    <a href="">
+                         <img src="../img/logo-header.png" alt="" class="w-[300px]">
+                    </a>
+               </div>
+
+               <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-5 lg:gap-y-0">
+                    <div class=" flex-col xl:flex-row justify-center items-center gap-x-2 lg:justify-normal">
+                         <a href="#">
+                              <i class="ri-shopping-bag-2-line text-2xl text-gray-700 shadow-2xl hover:text-accent transition-all"></i>
+                         </a>
+                    </div>
+
+                    <!-- <div class="flex justify-center items-center gap-x-2 lg:justify-normal sm:hidden">
+                         <a href="#">
+                              <i
+                                   class="ri-user-line text-2xl text-gray-700 shadow-2xl hover:text-accent transition-all"></i>
+                         </a>
+                    </div> -->
+
+                    <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+                         <button class="text-secondary btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0
+                         shadow-2xl transition-all duration-300 z-9">
+                              <a href="daftar.html">Login</a>
+                         </button>
+                    </div>
+
+                    <div>
+                         <!-- nav mobile -->
+                         <nav class="mnav bg-white fixed w-[300px] top-0 h-screen -left-[300px] lg:hidden">
+                              <div class="mnav__close-btn bg-primary w-8 h-8 relative -right-full
+                              top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg">
+                                   <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
+                              </div>
+                              <!-- logo, list, form -->
+                              <div class="px-12 flex flex-col gap-y-12 h-full">
+                                   <!-- logo -->
+                                   <a href="">
+                                        <img src="../img/logo-header.png" alt="">
+                                   </a>
+
+                                   <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-5 lg:gap-y-0">
+                                        <div class="flex flex-col xl:flex-row justify-center items-center gap-x-2 lg:justify-normal">
+                                             <a href="">
+                                                  <i class="ri-shopping-bag-2-line text-2xl text-gray-700 shadow-2xl hover:text-accent transition-all"></i>
+                                             </a>
+                                        </div>
+                    
+                                        <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+                                             <a href="">
+                                                  <i
+                                                       class="ri-user-line text-2xl text-gray-700 shadow-2xl hover:text-accent transition-all"></i>
+                                             </a>
+                                        </div>
+                                   </div>
+
+                                   <!-- list -->
+                                   <ul class="flex flex-col gap-y-5">
+                                        <li>
+                                             <a href=""
+                                                  class="text-secondary hover:text-accent transition-all duration-300">Home</a>
+                                        </li>
+
+                                        <li>
+                                             <a href=""
+                                                  class="text-secondary hover:text-accent transition-all duration-300">Philosophy</a>
+                                        </li>
+
+                                        <li>
+                                             <a href=""
+                                                  class="text-secondary hover:text-accent transition-all duration-300">recommended</a>
+                                        </li>
+
+                                        <li>
+                                             <a href=""
+                                                  class="text-secondary hover:text-accent transition-all duration-300">Collection</a>
+                                        </li>
+
+                                        <li>
+                                             <a href=""
+                                                  class="text-secondary hover:text-accent transition-all duration-300">Blog</a>
+                                        </li>
+
+                                        <li>
+                                             <a href=""
+                                                  class="text-secondary hover:text-accent transition-all duration-300">Stores</a>
+                                        </li>
+                                   </ul>
+                                   <!-- form -->
+                                   <form>
+                                        <label for="">
+                                             <i class="ri-search-2-line text-2xl text-accent"></i>
+                                        </label>
+                                        <input type="text" id="nav-search-input" placeholder="Search..." class="outline-none w-[160px] border-b-2 focus:border-b-2
+                                        focus:border-accent placeholder:italic">
+                                   </form>
+                              </div>
+                         </nav>
+
+                         <!-- nav dekstop -->
+                         <nav class="bg-white border-r pr-4 absolute w-full left-0 -bottom-[86px] shadow-custom1
+                         h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between lg:px-[50px]">
+                              <!-- list -->
+                              <ul class="flex gap-x-4">
+                                   <li>
+                                        <a href=""
+                                             class="text-secondary hover:text-accent transition-all duration-300 border-r pr-4">Home</a>
+                                   </li>
+
+                                   <li>
+                                        <a href=""
+                                             class="text-secondary hover:text-accent transition-all duration-300 border-r pr-4">Philosophy</a>
+                                   </li>
+
+                                   <li>
+                                        <a href=""
+                                             class="text-secondary hover:text-accent transition-all duration-300 border-r pr-4">recommended</a>
+                                   </li>
+
+                                   <li>
+                                        <a href=""
+                                             class="text-secondary hover:text-accent transition-all duration-300 border-r pr-4">Collection</a>
+                                   </li>
+
+                                   <li>
+                                        <a href=""
+                                             class="text-secondary hover:text-accent transition-all duration-300 border-r pr-4">Blog</a>
+                                   </li>
+
+                                   <li>
+                                        <a href=""
+                                             class="text-secondary hover:text-accent transition-all duration-300 pr-4">Stores</a>
+                                   </li>
+                              </ul>
+
+                              <!-- form -->
+                              <form class="relative flex gap-y-[10px]">
+                                   <label for="search-input" class="flex justify-center items-center group">
+                                        <i class="ri-search-2-line text-2xl text-accent"></i>
+                                   </label>
+                                   <input type="text" id="search-input" placeholder="Search..." class="outline-none w-[100px] focus:w-[180px] focus:border-b-2 focus:border-accent
+                                   placeholder:italic placeholder:text-base transition-all duration-500">
+
+                              </form>
+                         </nav>
+                    </div>
+               </div>
+          </div>
+     </header>
+
+     <!-- HERO -->
+     <section class="hero bg-[#e0e3d8] bg-no-repeat w-auto py-12 xl:pt-12 xl:pb-0 overflow-hidden">
+          <div class="container mx-auto h-full">
+               <!-- text, img -->
+               <div class="flex flex-col xl:flex-row items-center justify-between h-full">
+                    <!-- text -->
+                    <div class="hero__text xl:w-[48%] text-center xl:text-left">
+                         <div>
+                              <!-- badge -->
+                              <div class="flex items-center bg-white py-[10px] px-[20px]
+                                          w-max gap-x-2 mb-[26px] rounded-full mx-auto xl:mx-0">
+                                   <i class="ri-hand-heart-line text-2xl text-accent"></i>
+                                   <div class="uppercase text-base font-medium text-[#9AB4B7] tracking-[2.24px]">
+                                        glow up your skin
+                                   </div>
+                              </div>
+
+                              <!-- tittle -->
+                              <div>
+                                   <h1 class="h1 mb-6 text-black">We care about your healthy skin</h1>
+                              </div>
+
+                              <!-- decript -->
+                              <p class="mb-[42px] md:max-w-xl">Vitae aliquam vestibulum elit adipiscing massa diam in
+                                   dignissim. Risus tellus libero elementum aliquam etiam. Lectus adipiscing est auctor
+                                   mi quisque nunc non viverra est.</p>
+
+                              <!-- button -->
+                              <button class="btn btn-lg btn-accent mx-auto xl:mx-0 group">
+                                   <a href="vidio.html">watch video</a>
+                                   <i class="ri-arrow-drop-right-line group-hover:ms-3 transition-all duration-500"></i>
+                              </button>
+                         </div>
+                    </div>
+                    <!-- img -->
+                    <div class="hero__img hidden xl:flex max-w-[814px] self-end">
+                         <img src="../img/cantikbingitsss.png" alt="">
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- STATS -->
+     <section class="stats section">
+          <div class="container mx-auto">
+               <!-- text -->
+               <div class="stats__text">
+                    <h2 class="h2 text-black flex-1 text-center mb-[50px]">Our <span
+                              class="text-primary">Recommendation</span></h2>
+               </div>
+
+               <!-- wrapper -->
+               <div class="flex flex-col xl:flex-row gap-y-4 justify-between">
+                    <!-- item -->
+                    <div class="stats__item flex-1 flex xl:border-r flex-col items-center">
+                         <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-3">
+                              <img src="../img/yang1.png" alt="">
+                         </div>
+                         <div>HYALU-CICA WATER-FIT SUN SERUM SPF50+ PA++++</div>
+                    </div>
+
+                    <div class="stats__item flex-1 flex xl:border-r flex-col items-center">
+                         <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-3">
+                              <img src="../img/yang2.png" alt="">
+                         </div>
+                         <div>CENTELLA SOOTHING CREAM</div>
+                    </div>
+
+                    <div class="stats__item flex-1 flex xl:border-r flex-col items-center">
+                         <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-3">
+                              <img src="../img/yang3.png" alt="">
+                         </div>
+                         <div>CENTELLA CREAM</div>
+                    </div>
+
+                    <div class="stats__item flex-1 flex flex-col items-center">
+                         <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-3">
+                              <img src="../img/yang4.png" alt="">
+                         </div>
+                         <div>TONE BRIGHTENING CAPSULE CREAM</div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- SERVICE -->
+     <section>
+          <!-- bg kotak -->
+          <div class="bg-services bg-cover bg-no-repeat max-w-[1446px] mx-4 xl:mx-auto rounded-[20px] px-6 h-[368px] xl:pt-[70px] relative flex items-center
+          xl:items-start -z-10">
+               <div class="container mx-auto">
+                    <!-- text -->
+                    <div class="services__top flex items-center flex-col xl:flex-row">
+                         <h2 class="h2 text-black flex-1 mb-4 text-center xl:text-left">Our <span
+                                   class="text-white">best Philosophy</span></h2>
+                         <p class="text-gray-200 flex-1 text-center xl:text-left max-w-2xl xl:max-w-none">Whatever
+                              touches the skin must be pristine. Believing good ingredients start from good land, we
+                              only use Centella Asiatica harvested from Good Agricultural and Collection Practices
+                              (GACP).</p>
+                    </div>
+               </div>
+          </div>
+
+          <!-- grid kotak -->
+          <div class="container mx-auto mt-8 xl:-mt-[144px]">
+               <!-- grid -->
+               <div class="grid xl:grid-cols-4 gap-5 px-8 xl:px-0">
+                    <!-- grid item 1-->
+                    <div class="service__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center mb-4
+                    hover:bg-[#e0e3d8] transition-all hover:translate-y-[-20px] duration-500">
+                         <!-- icon -->
+                         <div class="mb-[15px]">
+                              <img src="../img/icon-centella.png" alt="">
+                         </div>
+                         <!-- title -->
+                         <h3 class="h3 mb-[10px] text-black">Centella asiatica</h3>
+                         <!-- desc -->
+                         <p class="font-light leading-normal max-w-[300px]">Di dalam Centella asiatica terdapat
+                              kandungan saponin, flavonoid, phenolic acid, dan terpenoid.</p>
+                    </div>
+
+                    <!-- grid item 2 -->
+                    <div class="service__item bg-white p-[30px] hover:translate-y-[-20px] duration-500 rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center mb-4
+                    hover:bg-[#e0e3d8] transition-all">
+                         <!-- icon -->
+                         <div class="mb-[15px]">
+                              <img src="../img/icon-air.png" alt="">
+                         </div>
+                         <!-- title -->
+                         <h3 class="h3 mb-[10px] text-black">Hyalu-Cica</h3>
+                         <!-- desc -->
+                         <p class="font-light leading-normal max-w-[300px]">Gabungan kandungan hyaluronic acid dan cica
+                              mampu membuat kulit terhidrasi dan ternutrisi dengan baik sehingga tampak lebih sehat.</p>
+                    </div>
+
+                    <!-- grid item 3 -->
+                    <div class="service__item bg-white duration-500 p-[30px] hover:translate-y-[-20px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center mb-4
+                    hover:bg-[#e0e3d8] transition-all">
+                         <!-- icon -->
+                         <div class="mb-[15px]">
+                              <img src="../img/icon-serum.png" alt="">
+                         </div>
+                         <!-- title -->
+                         <h3 class="h3 mb-[10px] text-black">Tea-Trica</h3>
+                         <!-- desc -->
+                         <p class="font-light leading-normal max-w-[300px]">Menenangkan kulit yang berjerawat dan
+                              iritasi. tea tree dan cica tersebut bersifat antibakteri dan antiradang sehingga dapat
+                              menekan perkembangan bakteri penyebab jerawat.</p>
+                    </div>
+
+                    <!-- grid item 4 -->
+                    <div class="service__item bg-white duration-500 p-[30px] hover:translate-y-[-20px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center
+                    hover:bg-[#e0e3d8] transition-all">
+                         <!-- icon -->
+                         <div class="mb-[15px]">
+                              <img src="../img/icon-garam.png" alt="">
+                         </div>
+                         <!-- title -->
+                         <h3 class="h3 mb-[10px] text-black">Poremizing</h3>
+                         <!-- desc -->
+                         <p class="font-light leading-normal max-w-[300px]">Poremizing diformulasi untuk mengecilkan
+                              tampilan pori serta mengontrol kelebihan minyak, Garam dari Himalaya ini efektif
+                              mengangkat sel kulit mati dan membersihkan pori.
+                         </p>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- PRODUCT SECTION -->
+     <section class="team section">
+          <div class="container mx-auto">
+               <div class="flex flex-col xl:flex-row">
+                    <div class="">
+                       <h1 class="team__title h2 mb-[15px] text-center xl:text-left text-black">Our <span
+                         class="text-primary">Product Collection</span></h1>    
+                    </div>
+
+                    <div class="mb-[50px] items-center justify-center flex xl:ms-[30rem]">
+                         <button class="border p-3 border-[#4F6F52] text-center uppercase tracking-[2.24px]
+                         hover:bg-[#4F6F52] group text-[#4F6F52] rounded-full ">
+                              <a href="" class="group-hover:text-white">
+                                    see more product
+                                   <i class="ri-arrow-drop-right-line group-hover:ms-4 transition-all duration-500"></i>
+                              </a>
+                         </button>
+                    </div>
+               </div>
+               <!-- Title -->
+               
+               <!-- Slider -->
+               <div class="team__slider swiper min-h-[400px]">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                         <!-- Slider 1 -->
+                         <div class="swiper-slide">
+                              <div class="flex flex-col md:flex-row gap-9">
+
+                                   <!-- Item 1 -->
+                                   <div class="flex flex-1 flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+
+                                             <!-- Img -->
+                                             <div class="flex-1">
+                                                  <img src="../img/251.png" alt="">
+                                             </div>
+
+                                             <!-- Info -->
+                                             <div class="flex-1 flex flex-col">
+                                                  <!-- Name -->
+                                                  <h4 class="font-semibold mb-[10px] text-black">CENTELLA AMPOULE FOAM
+                                                  </h4>
+
+                                                  <!-- product -->
+                                                  <div
+                                                       class="font-medium uppercase tracking-[2.24px] text-[#aa9c7f] mb-[20px]">
+                                                       <i class="ri-star-s-fill"></i>
+                                                       <i class="ri-star-s-fill"></i>
+                                                       <i class="ri-star-s-fill"></i>
+                                                       <i class="ri-star-s-fill"></i>
+                                                       <i class="ri-star-half-s-fill"></i>
+                                                       (4.6)
+                                                  </div>
+
+                                                  <!-- desc -->
+                                                  <p class="font-light mb-[26px] max-w-[320px]">Dolor sit amet,
+                                                       consectetur adipiscing elit. Dignissim massa diam elementum
+                                                       habitant fames ac penatibus et.</p>
+
+                                                  <!-- button -->
+                                                  <button class="btn btn-sm uppercase font-light bg-transparent border-2 border-[#aa9c7f] hover:bg-[#aa9c7f] group
+                                             transition-all duration-500">
+                                                       <a class=" text-secondary group-hover:text-white"
+                                                            href="product1.html">VIEW THIS PRODUCT</a>
+                                                  </button>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <!-- Item 2 -->
+                                   <div class="flex flex-1 flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+
+                                             <!-- Img -->
+                                             <div class="flex-1">
+                                                  <img src="../img/Rectangle 256.png" alt="">
+                                             </div>
+
+                                             <!-- Info -->
+                                             <div class="flex-1 flex flex-col">
+                                                  <!-- Name -->
+                                                  <h4 class="font-semibold mb-[10px] text-black">PROBIO-CICA ENRICH
+                                                       CREAM</h4>
+
+                                                  <!-- product -->
+                                                  <div
+                                                       class="font-medium uppercase tracking-[2.24px] text-[#3a1f0f] mb-[20px]">
+                                                       <i class="ri-star-s-fill"></i>
+                                                       <i class="ri-star-s-fill"></i>
+                                                       <i class="ri-star-s-fill"></i>
+                                                       <i class="ri-star-s-fill"></i>
+                                                       <i class="ri-star-half-s-fill"></i>
+                                                       (4.6)
+                                                  </div>
+
+                                                  <!-- desc -->
+                                                  <p class="font-light mb-[26px] max-w-[320px]">Dolor sit amet,
+                                                       consectetur adipiscing elit. Dignissim massa diam elementum
+                                                       habitant fames ac penatibus et.</p>
+
+                                                  <!-- button -->
+                                                  <button class="btn btn-sm uppercase font-light bg-transparent border-2 border-[#3a1f0f] hover:bg-[#3A1F0F] hover:border-transparent group
+                                             transition-all duration-500">
+                                                       <a class="text-secondary group-hover:text-white"
+                                                            href="pruduct3.html">VIEW THIS PRODUCT</a>
+                                                  </button>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- Slider 2 -->
+                         <div class="swiper-slide">
+                              <div class="flex flex-col md:flex-row gap-9">
+
+                                   <!-- Item 1 -->
+                                   <div class="flex flex-1 flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+
+                                             <!-- Img -->
+                                             <div class="flex-1">
+                                                  <img src="../img/Rectangle 257.png" alt="">
+                                             </div>
+
+                                             <!-- Info -->
+                                             <div class="flex-1 flex flex-col">
+                                                  <!-- Name -->
+                                                  <h4 class="font-semibold mb-[10px] text-black">HYALU-CICA WATER-FIT
+                                                       SUN SERUM SPF50+ PA++++</h4>
+
+                                                  <!-- product -->
+                                                  <div
+                                                       class="font-medium uppercase tracking-[2.24px] text-[#164863] mb-[20px]">
+                                                       <i class="ri-star-s-fill"></i>
+                                                       <i class="ri-star-s-fill"></i>
+                                                       <i class="ri-star-s-fill"></i>
+                                                       <i class="ri-star-s-fill"></i>
+                                                       <i class="ri-star-half-s-fill"></i>
+                                                       (4.8)
+                                                  </div>
+
+                                                  <!-- desc -->
+                                                  <p class="font-light mb-[26px] max-w-[320px]">Dolor sit amet,
+                                                       consectetur adipiscing elit. Dignissim massa diam elementum
+                                                       habitant fames ac penatibus et.</p>
+
+                                                  <!-- button -->
+                                                  <button class="btn btn-sm uppercase font-light bg-transparent border-2 border-[#164863] hover:bg-[#164863] hover:border-transparent group
+                                             transition-all duration-500">
+                                                       <a class="text-secondary group-hover:text-white"
+                                                            href="product2.html">VIEW THIS PRODUCT</a>
+                                                  </button>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <!-- Item 2 -->
+                                   <div class="flex flex-1 flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+
+                                             <!-- Img -->
+                                             <div class="flex-1">
+                                                  <img src="../img/brightening toneup.png" alt="">
+                                             </div>
+
+                                             <!-- Info -->
+                                             <div class="flex-1 flex flex-col">
+                                                  <!-- Name -->
+                                                  <h4 class="font-semibold mb-[10px] text-black">TONE BRIGHTENING
+                                                       TONE-UP SUNSCREEN</h4>
+
+                                                  <!-- product -->
+                                                  <div
+                                                       class="font-medium uppercase tracking-[2.24px] text-[#F875AA] mb-[20px]">
+                                                       <i class="ri-star-s-fill"></i>
+                                                       <i class="ri-star-s-fill"></i>
+                                                       <i class="ri-star-s-fill"></i>
+                                                       <i class="ri-star-s-fill"></i>
+                                                       <i class="ri-star-half-s-fill"></i>
+                                                       (4.6)
+                                                  </div>
+
+                                                  <!-- desc -->
+                                                  <p class="font-light mb-[26px] max-w-[320px]">Dolor sit amet,
+                                                       consectetur adipiscing elit. Dignissim massa diam elementum
+                                                       habitant fames ac penatibus et.</p>
+
+                                                  <!-- button -->
+                                                  <button class="btn btn-sm uppercase font-light bg-transparent border-2 border-[#F875AA] hover:bg-[#F875AA] hover:border-transparent group
+                                             transition-all duration-500">
+                                                       <a href="product4.html"
+                                                            class="text-secondary group-hover:text-white">VIEW THIS
+                                                            PRODUCT</a>
+                                                  </button>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- BLOG -->
+     <div class="container mx-auto">
+          <h2 class="blog__title h2 mb-[50px] text-center xl:text-left text-black">Our <span class="text-primary">Recent
+                    Posts</span></h2>
+
+          <!-- blog post  -->
+          <div class="flex flex-col xl:flex-row gap-y-6 xl:gap-y-0 items-center xl:justify-between mb-[50px]">
+               <!-- post 1 -->
+               <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer">
+                    <div class="relative overflow-hidden group">
+
+                         <img src="../img/blog 1.png" class="group-hover:scale-110 transition-all duration-500">
+                         <!-- blog -->
+                         <div
+                              class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[16px]">
+                              new
+                         </div>
+                    </div>
+                    <!-- text -->
+                    <div class="px-5 py-6">
+                         <!-- date -->
+                         <div class="mb-4">FEBRUARY 13, 2023</div>
+                         <!-- title  -->
+                         <h4 class="h4 mb-[10px]">[REVIEW] SKIN1004 HYALU-CICA WATER-FIT SUN SERUM SPF 50+ PA++++</h4>
+                         <!-- deks  -->
+                         <p class="font-light"> 2022 is the year of discovering the best sunscreens. The year is about
+                              to end and it is about time I started rounding up the best makeup and skinc...
+                              <a class="italic underline text-[#4C5354]" href="">Read more</a>
+                         </p>
+                    </div>
+               </div>
+               <!-- post 2 -->
+               <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer">
+                    <div class="relative overflow-hidden group">
+                         <img src="../img/blog2.png" class="group-hover:scale-110 transition-all duration-500">
+                         <!-- blog -->
+                         <div
+                              class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[16px]">
+                              new
+                         </div>
+                    </div>
+                    <!-- text -->
+                    <div class="px-5 py-6">
+                         <!-- date -->
+                         <div class="mb-4">FEBRUARY 13, 2023</div>
+                         <!-- title  -->
+                         <h4 class="h4 mb-[10px]">SKIN1004 SUNSCREEN REVIEW COMPARISON CENTELLA VS HYALU</h4>
+                         <!-- deks  -->
+                         <p class="font-light">Comparison: Skin1004 Centella Sunscreen and Skin1004 Hyalu Cica Sunscreen
+                              It is no secret that Asian sunscreen is the bomb. I’m sorry, western s...
+
+                              <a class="italic underline text-[#4C5354] mx-auto" href="">Read more</a>
+                         </p>
+                    </div>
+               </div>
+               <!-- post 3 -->
+               <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer">
+                    <div class="relative overflow-hidden group">
+                         <img src="../img/blog3.png" class="group-hover:scale-110 transition-all duration-500">
+                         <!-- blog -->
+                         <div
+                              class="bg-accent-tertiary absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[16px]">
+                              new
+                         </div>
+                    </div>
+                    <!-- text -->
+                    <div class="px-5 py-6">
+                         <!-- date -->
+                         <div class="mb-4">FEBRUARY 13, 2023</div>
+                         <!-- title  -->
+                         <h4 class="h4 mb-[10px]">SKIN1004 MADAGASCAR CENTELLA HYALU-CICA BRIGHTENING TONER & SLEEPING
+                              PACK | REVIEW</h4>
+                         <!-- deks  -->
+                         <p class="font-light">Hyaluronic acid and centella asiatica are two of my favorite skincare
+                              ingredients. Seeing them together in any ...
+
+                              <a class="italic underline text-[#4C5354]" href="">Read more</a>
+                         </p>
+                    </div>
+               </div>
+          </div>
+          <div class="flex flex-row justify-center items-center mb-[5rem]">
+               <button class="btn btn-lg btn-accent mx-auto">
+                  <a href="blog.html">Read more blogs</a>  
+               </button>
+          </div>
+
+     </div>
+
+
+     <!-- BRANDS -->
+     <section class="">
+          <div class="container mx-auto mb-[5rem]">
+               <div class="flex flex-col xl:flex-row gap-y-[4rem] xl:gap-y-0 justify-between items-center">
+                    <img src="../img/brands1-removebg-preview.png" alt="">
+                    <img src="../img/brands2-removebg-preview.png" alt="">
+                    <img src="../img/brands3-removebg-preview.png" alt="">
+                    <img src="../img/brands4-removebg-preview.png" alt="">
+               </div>
+          </div>
+     </section>
+
+     <!-- NEWS LATTER -->
+     <section class="newslatter bg-accent md:h-[444px] py-12 flex items-center relative
+     overflow-hidden">
+          <!-- pattern -->
+          <div class="absolute left-0 bottom-0">
+               <img src="../assets/img/newsletter/pattern.svg" alt="">
+          </div>
+          <!-- container -->
+          <div class="newslatter__container container mx-auto">
+               <!-- wrapper -->
+               <div class="flex flex-col xl:flex-row lg:items-center lg:gap-x-[88px]">
+                    <!-- text -->
+                    <div class="flex-1 z-10 text-center md:text-left">
+                         <div class="text-base uppercase text-white tracking-[2.24px] font-medium">BE THE FIRST TO KNOW
+                         </div>
+                         <h1 class="h1 text-white mb-4">Subscribe us to get more updates</h1>
+                    </div>
+                    <!-- form -->
+                    <form class="flex-1">
+                         <div class="flex flex-col xl:flex-row relative gap-y-4">
+                              <input
+                                   class="rounded-full w-full h-[65px] bg-transparent border-2 border-white outline-none pl-[30px] placeholder:text-white focus:text-white"
+                                   type="text" name="" id="" placeholder="Your Email Address">
+                              <button class=" btn btn-lg btn-white md:absolute right-0">Subscribe</button>
+                         </div>
+                    </form>
+               </div>
+          </div>
+     </section>
+
+     <!-- FOOTER -->
+     <footer class="text-secondary p-8 mt-5">
+          <div class="container mx-auto flex flex-col xl:flex-row items-start justify-between">
+               <div class="items-center w-[300px]">
+                    <img src="../img/logo-header.png" alt="" class=" ">
+                    <p class="font-light text-gray-500 mt-[20px]">Whatever touches the skin must be pure. Let us deliver
+                         you the untouched nature and its purity to your skin, to help you discover your best skin.</p>
+                    <div class="text-gray-500 mt-[10px]">Customer Service : hello@skin1004korea.com</div>
+                    <div class="text-gray-500 mt-[10px]">Wholesale Inquiry : sales@skin1004korea.com</div>
+
+                    <!-- media sosial -->
+                    <div class="text-2xl m-3">
+                         <a href="">
+                              <i class="ri-instagram-line text-gray-500 hover:text-primary ms-2"></i>
+                         </a>
+
+                         <a href="">
+                              <i class="ri-facebook-line text-gray-500 hover:text-primary ms-2"></i>
+                         </a>
+
+                         <a href="">
+                              <i class="ri-pinterest-line text-gray-500 hover:text-primary ms-2"></i>
+                         </a>
+
+                         <a href="">
+                              <i class="ri-tiktok-line text-gray-500 hover:text-primary ms-2"></i>
+                         </a>
+
+                         <a href="">
+                              <i class="ri-youtube-line text-gray-500 hover:text-primary ms-2"></i>
+                         </a>
+                    </div>
+               </div>
+
+               <div class="items-center mt-5">
+                    <h3>HELP</h3>
+                    <div>
+                         <a href="">SKIN1004 Blog</a>
+                    </div>
+                    <div>
+                         <a href="">Stores</a>
+                    </div>
+                    <div>
+                         <a href="">Become A Partner</a>
+                    </div>
+                    <div>
+                         <a href="">FAQs</a>
+                    </div>
+                    <div>
+                         <a href="">Contact Us</a>
+                    </div>
+               </div>
+
+               <div class="items-center mt-5">
+                    <h3>POLICY</h3>
+                    <div>Shipping Policy</div>
+                    <div>Refund Policy</div>
+                    <div>Privacy Policy</div>
+                    <div>Terms of Service</div>
+               </div>
+
+               <div class="items-center xl:mt-[10px] w-[300px] mt-5">
+                    <h3>BE THE FIRST TO KNOW</h3>
+                    <div class="items-center">Stay up to date with our newest releases, exclusive offers, and giveaways
+                         straight to your inbox.</div>
+                    <form class="flex-1">
+                         <div class="flex flex-col relative mt-3">
+                              <input
+                                   class=" w-full h-[55px] bg-transparent border-2 border-accent outline-none pl-[30px] placeholder:text-secondary focus:text-black"
+                                   type="text" name="" id="" placeholder="Your Email Address">
+                         </div>
+
+                         <div class="flex flex-col relative mt-3">
+                              <button class="btn-sm md:absolute left-0 mt-3 bg-accent text-white">Subscribe</button>
+                         </div>
+                    </form>
+               </div>
+          </div>
+
+          
+          <div class="container mx-auto text-xs mt-9 sm:mt-28">
+               <div class="mb-2">
+                    Craver Corporation
+               </div>
+
+               <div>
+                    <span class="font-bold">CEO:</span> Sohyung Lee
+               </div>
+
+               <div>
+                    <span class="font-bold">Email:</span> hello@skin1004korea.com
+               </div>
+
+               <div>
+                    <span class="font-bold">Company Location:</span> Milim tower 12F, 14, Teheran-ro 4-gil, Gangnam-gu, Seoul, Republic of Korea
+               </div>
+
+               <div>
+                    <span class="font-bold">Company registration number:</span> 261-81-14845
+               </div>
+
+               <div class="font-bold mt-2">
+                    © SKIN1004
+               </div>
+          </div>
+     </footer>
+
+
+
+     <!-- script -->
+     <!-- swiper -->
+     <script src="swiper-bundle.min.js"></script>
+     <!-- main -->
+     <script src="main.js"></script>
+     <!-- scrol reveal -->
+     <script src="scrollreveal.min.js"></script>
+</body>
+
+</html>
